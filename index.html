@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веселые аниматоры | Праздник для детей</title>
+    <!-- Подключаем детский, округлый шрифт от Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- БАЗОВЫЕ НАСТРОЙКИ --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #FFF9ED; /* Нежный кремовый фон */
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* --- ШАПКА САЙТА --- */
+        header {
+            background-color: #FFD166; /* Желтый, как солнышко */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #EF476F; /* Ярко-розовый */
+            font-size: 2.5em;
+            font-weight: 900;
+            text-shadow: 2px 2px 0px #FFFFFF;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #118AB2; /* Синий */
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        /* --- ГЛАВНЫЙ ЭКРАН (ПРИВЕТСТВИЕ) --- */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #FF9F1C 0%, #FFBF69 100%);
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #EF476F;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(239, 71, 111, 0.4);
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #d83a5e;
+        }
+
+        /* --- БЛОК УСЛУГ --- */
+        .services-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .services-title {
+            text-align: center;
+            color: #06D6A0; /* Мятно-зеленый */
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+
+        .service-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            border: 2px dashed #FFD166;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 2.5em;
+            margin-right: 20px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .service-text {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #118AB2;
+        }
+
+        /* --- ПОДВАЛ --- */
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #FFD166;
+        }
+
+        /* --- АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ --- */
+        @media (min-width: 600px) {
+            .service-list {
+                grid-template-columns: 1fr 1fr; /* В две колонки на больших экранах */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <h1>🎈 Топ-хлоп-шоу 🎈</h1>
+        <div class="subtitle">Корпорация детских праздников</div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+        <p>Мы берем на себя все заботы о программе. Вам останется только наслаждаться улыбками детей и делать классные фото!</p>
+        <a href="#services" class="btn">Узнать программу 👇</a>
+    </section>
+
+    <!-- СПИСОК УСЛУГ -->
+    <section class="services-container" id="services">
+        <h2 class="services-title">Что входит в наш праздник?</h2>
+        
+        <ul class="service-list">
+            <!-- Пункт 1 -->
+            <li class="service-item">
+                <div class="service-icon">⏰</div>
+                <div class="service-text">Время проведения: <em>[Добавьте ваше время]</em></div>
+            </li>
+            
+            <!-- Пункт 2 -->
+            <li class="service-item">
+                <div class="service-icon">🍰</div>
+                <div class="service-text">Сладкий стол</div>
+            </li>
+
+            <!-- Пункт 3 -->
+            <li class="service-item">
+                <div class="service-icon">🍕</div>
+                <div class="service-text">Меню</div>
+            </li>
+
+            <!-- Пункт 4 -->
+            <li class="service-item">
+                <div class="service-icon">👩‍🍳</div>
+                <div class="service-text">Кулинарный Мастер-класс</div>
+            </li>
+
+            <!-- Пункт 5 -->
+            <li class="service-item">
+                <div class="service-icon">🎨</div>
+                <div class="service-text">Мастер-класс, на котором будут делать поделки</div>
+            </li>
+
+            <!-- Пункт 6 -->
+            <li class="service-item">
+                <div class="service-icon">🎉</div>
+                <div class="service-text">Активные поздравления именинников</div>
+            </li>
+
+            <!-- Пункт 7 -->
+            <li class="service-item">
+                <div class="service-icon">📸</div>
+                <div class="service-text">Фотосессия</div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ПОДВАЛ (Контакты) -->
+    <footer>
+        <h3>Свяжитесь с нами для бронирования!</h3>
+        <p class="contact-info">📞 +7 (999) 123-45-67 | 💬 Напишите нам в WhatsApp/Telegram</p>
+    </footer>
+
+</body>
+</html>           
